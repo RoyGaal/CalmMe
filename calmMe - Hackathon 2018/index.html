@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CalmMe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="CalmMe.css">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse:separate;
+  width: 70%;
+}
+td, th {
+  border: 3px solid #808080;
+  text-align: center;
+
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+</head>
+
+<body>
+  <div class="div1" style="background-image:url('Images/top_img2.png'); width:100%; height:100%; background-size: 100% 100%; background-repeat:no-repeat;">
+  </br>
+    <!-- <p1>Login</p1> -->
+    <!-- <button type="button" onclick="window.open('http://www.roygal.com')">Login</button> -->
+
+  <h1 style="color:white">CalmMe</h1>
+  </br></br></br>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+    <li><a data-toggle="pill" href="#profile">Profile</a></li>
+    <li><a data-toggle="pill" href="#contacts">Contacts</a></li>
+    <li><a data-toggle="pill" href="#links">Links</a></li>
+  </ul>
+
+  </div>
+
+  <div class="container">
+
+    <input id="txtEmail" type="email" placeholder="Email">
+    <input id="txtPassword" type="password" placeholder="Password">
+
+    <button id="btnLogin" class="btn btn-action">Log in</button>
+    <button id="btnSignUp" class="btn btn-secondary">Sign up</button>
+    <button id="btnLogout" class="btn btn-action hide">Log out</button>
+  </div>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <!-- <h3>HOME</h3> -->
+    </br>
+    <img src="images/healthy.png" width="155" height="155">
+    <p>Keep your mind limber. In addition to the fact that staying mentally active is emotionally rewarding, studies have shown that there is a correlation between mentally challenging activities and a decreased risk of Alzheimer's. Never stop learning, even if you feel like you’re “past your prime.”[1]
+There are some simple ways you can exercise your mind. For example, you can try taking a different route to work, or brush your teeth with the hand you don't normally use.[2]
+Read more, and challenge yourself with your reading selection. Alternate between reading those pulp mystery novels you love, and classics like selections by Hemingway, Twain, and London.
+Solve puzzles and play games of strategy. These sort of games engage you mentally. You could also learn to play an instrument. All of these activities have been linked to improved memory.</p>
+<img src="images/healthy2.png" width="155" height="155">
+<p>Boost your karma points. Doing good will make you feel good. When you put positive energy out into the universe, that positive energy will come back to you. Improving the lives of others will in turn, improve your own mental state because you will know that you have done good by someone else.
+If you have some spare time, allocate that time to helping others. Volunteer at a soup kitchen or animal shelter. Work in the community garden or simply help a friend in some way.</p>
+      <a class="a2" href="https://www.veteranscrisisline.net">
+        <img src="images/freedom.png" width="155" height="155">
+      </a>
+      <a class="a2" href="https://giveanhour.org">
+        <img src="images/beach_yoga.png" width="155" height="155">
+      </a>
+      <a class="a2" href="https://maketheconnection.net/">
+        <img src="images/skateboarder.png" width="155" height="155">
+      </a>
+      <a class="a2" href="https://www.ptsd.va.gov/public/ptsd-overview/basics/how-common-is-ptsd.asp">
+        <img src="images/surfer.png" width="155" height="155">
+      </a>
+      <a class="a2" href="https://suicidepreventionlifeline.org">
+        <img src="images/mountain.png" width="155" height="155">
+      </a>
+      <a class="a2" href="http://www.vsf-usa.org">
+        <img src="images/top2.png" width="155" height="155">
+      </a>
+    </div>
+    <div id="profile" class="tab-pane fade">
+      <!-- <h3>Profile</h3> -->
+      <input id="first name" type="text" placeholder="First Name">
+      </br>
+      <input id="last name" type="text" placeholder="Last Name">
+      </br>
+      <input id="number" type="number" placeholder="Age">
+      </br>
+      <input id="number" type="number" placeholder="Phone Number">
+    </br>
+    <button class="b1">Save</button>
+    </div>
+
+
+    <div id="contacts" class="tab-pane fade">
+      <!-- <h3>Contacts</h3> -->
+      <div class="div1">
+      <h3>Add Contact:</h3>
+      <input id="name" type="text" placeholder="Name">
+      <input id="number" type="number" placeholder="Phone Number">
+      <button class="b1">Add</button>
+      </br></br>
+
+      <table align="center">
+      <tr>
+        <th>Name</th>
+        <th>Phone Number</th>
+      </tr>
+      <tr>
+        <td>Martin</td>
+        <td>914-224-5543</td>
+      </tr>
+      <tr>
+        <td>Brain</td>
+        <td>914-234-5113</td>
+      </tr>
+      <tr>
+        <td>Roy</td>
+        <td>917-254-5343</td>
+      </tr>
+      </table>
+    </div>
+  </div>
+
+    <div id="links" class="tab-pane fade">
+      <h3></h3>
+      <a class="a2" href="https://www.veteranscrisisline.net">
+        <img src="images/freedom.png" width="155" height="155">
+      </a>
+      <a class="a2" href="https://giveanhour.org">
+        <img src="images/beach_yoga.png" width="155" height="155">
+      </a>
+      <a class="a2" href="https://maketheconnection.net/">
+        <img src="images/skateboarder.png" width="155" height="155">
+      </a>
+      <a class="a2" href="https://www.ptsd.va.gov/public/ptsd-overview/basics/how-common-is-ptsd.asp">
+        <img src="images/surfer.png" width="155" height="155">
+      </a>
+      <a class="a2" href="https://suicidepreventionlifeline.org">
+        <img src="images/mountain.png" width="155" height="155">
+      </a>
+      <a class="a2" href="http://www.vsf-usa.org">
+        <img src="images/top2.png" width="155" height="155">
+      </a>
+
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+        <br>
+        <a target="_blank" href="https://www.anxiety.org/military-veterans-anxiety-resources">
+        <img style="margin-top:30px;padding-top:30px" src="images\anxiety.png"> </a>
+        <a target="_blank" href="https://www.mentalhealth.va.gov/anxiety.asp">
+        <img  src="images\veteranaffairs.jpg"></a>
+        <br>
+        <a target="_blank" href="https://maketheconnection.net/conditions/anxiety-disorder">
+        <img style="margin-top:30px;padding-top:30px" src="images\maketheconnect.jpg"></a>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="app.js"></script>
+</body>

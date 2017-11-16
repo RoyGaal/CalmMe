@@ -1,0 +1,63 @@
+body{
+
+}
+
+nav{
+  word-spacing: 120px;
+  font-size: 26px;
+  font-family: Arial;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: -35px;
+}
+
+.div1{
+  text-align: center;
+}
+
+.bottun
+
+h1{
+  text-align: center;
+  font-family: Apple Chancery;
+  font-size: 66px;
+  color: white;
+}
+h2{
+  text-align: center;
+  font-family: Arial Black;
+  font-size: 56px;
+  color: black;
+}
+h3{
+  text-align: center;
+  font-family: Arial;
+  font-size: 32px;
+  color: black;
+  text-decoration: underline;
+}
+
+input{
+  font-size: 18px;
+}
+
+table{
+  font-size: 22px;
+}
+
+.b1{
+  font-size: 28px;
+}
+
+.div1{
+  margin-top: 30px;
+}
+
+a{
+  color: white;
+  text-decoration-line: none;
+  font-size: 32px;
+}
+a1{
+  color: white;
+}
